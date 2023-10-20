@@ -48,7 +48,7 @@ export const SearchHeroes = () => {
 
           <hr></hr>
 
-          <form onSubmit={onSearch}>
+          <form aria-label="form" onSubmit={onSearch}>
        
             <input
        
@@ -90,7 +90,7 @@ export const SearchHeroes = () => {
 
           <div className="alert alert-primary animate__animated animate__fadeIn" style={{display: showSearch ? "" : "none"}}>Search a hero</div> 
 
-          <div className="alert alert-danger animate__animated animate__fadeIn" style={{display: showError ? "" : "none"}}>No hero with <b>{q}</b></div>
+          <div aria-label="div"  className="alert alert-danger animate__animated animate__fadeIn" style={{display: showError ? "" : "none"}}>No hero with <b>{q}</b></div>
 
           {
           
